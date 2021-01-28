@@ -16,6 +16,7 @@
 		7F4D5ABF25C2EF63006F6DF9 /* Agenda2077Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5ABE25C2EF63006F6DF9 /* Agenda2077Tests.swift */; };
 		7F4D5ACA25C2EF63006F6DF9 /* Agenda2077UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */; };
 		7F4D5ADA25C2F33C006F6DF9 /* Cyberpunk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */; };
+		7F4D5ADD25C2F827006F6DF9 /* Cyberway Riders.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D5ADC25C2F827006F6DF9 /* Cyberway Riders.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda2077UITests.swift; sourceTree = "<group>"; };
 		7F4D5ACB25C2EF63006F6DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cyberpunk-Regular.ttf"; path = "../../../../../Downloads/Cyberpunk-Regular.ttf"; sourceTree = "<group>"; };
+		7F4D5ADC25C2F827006F6DF9 /* Cyberway Riders.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cyberway Riders.otf"; path = "../../../../../Downloads/cyberway_riders/Cyberway Riders.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		7F4D5AD825C2F2FA006F6DF9 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7F4D5ADC25C2F827006F6DF9 /* Cyberway Riders.otf */,
 				7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */,
 			);
 			path = Fonts;
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4D5ADD25C2F827006F6DF9 /* Cyberway Riders.otf in Resources */,
 				7F4D5AB425C2EF63006F6DF9 /* LaunchScreen.storyboard in Resources */,
 				7F4D5AB125C2EF63006F6DF9 /* Assets.xcassets in Resources */,
 				7F4D5AAF25C2EF60006F6DF9 /* Main.storyboard in Resources */,
