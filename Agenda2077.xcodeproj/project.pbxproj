@@ -15,6 +15,7 @@
 		7F4D5AB425C2EF63006F6DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D5AB225C2EF63006F6DF9 /* LaunchScreen.storyboard */; };
 		7F4D5ABF25C2EF63006F6DF9 /* Agenda2077Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5ABE25C2EF63006F6DF9 /* Agenda2077Tests.swift */; };
 		7F4D5ACA25C2EF63006F6DF9 /* Agenda2077UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */; };
+		7F4D5ADA25C2F33C006F6DF9 /* Cyberpunk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7F4D5AC525C2EF63006F6DF9 /* Agenda2077UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Agenda2077UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda2077UITests.swift; sourceTree = "<group>"; };
 		7F4D5ACB25C2EF63006F6DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cyberpunk-Regular.ttf"; path = "../../../../../Downloads/Cyberpunk-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				7F4D5ABD25C2EF63006F6DF9 /* Agenda2077Tests */,
 				7F4D5AC825C2EF63006F6DF9 /* Agenda2077UITests */,
 				7F4D5AA525C2EF60006F6DF9 /* Products */,
+				7F4D5AD825C2F2FA006F6DF9 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +129,14 @@
 				7F4D5ACB25C2EF63006F6DF9 /* Info.plist */,
 			);
 			path = Agenda2077UITests;
+			sourceTree = "<group>";
+		};
+		7F4D5AD825C2F2FA006F6DF9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F4D5AD925C2F33C006F6DF9 /* Cyberpunk-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				7F4D5AB425C2EF63006F6DF9 /* LaunchScreen.storyboard in Resources */,
 				7F4D5AB125C2EF63006F6DF9 /* Assets.xcassets in Resources */,
 				7F4D5AAF25C2EF60006F6DF9 /* Main.storyboard in Resources */,
+				7F4D5ADA25C2F33C006F6DF9 /* Cyberpunk-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
