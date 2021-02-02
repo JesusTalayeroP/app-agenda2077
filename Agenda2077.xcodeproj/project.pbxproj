@@ -20,6 +20,7 @@
 		7F4D5AB425C2EF63006F6DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D5AB225C2EF63006F6DF9 /* LaunchScreen.storyboard */; };
 		7F4D5ABF25C2EF63006F6DF9 /* Agenda2077Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5ABE25C2EF63006F6DF9 /* Agenda2077Tests.swift */; };
 		7F4D5ACA25C2EF63006F6DF9 /* Agenda2077UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */; };
+		7F73015C25C98467009DC57B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73015B25C98467009DC57B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7F4D5AC525C2EF63006F6DF9 /* Agenda2077UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Agenda2077UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda2077UITests.swift; sourceTree = "<group>"; };
 		7F4D5ACB25C2EF63006F6DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F73015B25C98467009DC57B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		7F4D5AA625C2EF60006F6DF9 /* Agenda2077 */ = {
 			isa = PBXGroup;
 			children = (
+				7F73015A25C98444009DC57B /* Request objects */,
 				072D1E9925C8906800E9FAEE /* Views */,
 				7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */,
 				7F4D5AA925C2EF60006F6DF9 /* SceneDelegate.swift */,
@@ -157,6 +160,14 @@
 				072D1E9725C8812F00E9FAEE /* Cyberpunk.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F73015A25C98444009DC57B /* Request objects */ = {
+			isa = PBXGroup;
+			children = (
+				7F73015B25C98467009DC57B /* User.swift */,
+			);
+			path = "Request objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */,
 				7F4D5AAA25C2EF60006F6DF9 /* SceneDelegate.swift in Sources */,
 				072D1E9D25C89AB500E9FAEE /* AgendaController.swift in Sources */,
+				7F73015C25C98467009DC57B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

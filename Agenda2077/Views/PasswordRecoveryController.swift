@@ -17,11 +17,13 @@ class PasswordRecoveryController: UIViewController {
     }
     
     @IBAction func RecoverPasswordButton(_ sender: Any) {
+        //Volver a la pantalla de LogIn
         navigationController?.popToRootViewController(animated: true)
 
     }
     
     @IBAction func LogInButton(_ sender: Any) {
+        //Volver a la pantalla de LogIn
         navigationController?.popToRootViewController(animated: true)
 
     }

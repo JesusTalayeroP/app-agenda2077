@@ -16,6 +16,7 @@ class LogInController: UIViewController {
     }
 
     @IBAction func LogInButton(_ sender: Any) {
+        // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
         navigationController?.setNavigationBarHidden(true, animated: true)
 
     }
