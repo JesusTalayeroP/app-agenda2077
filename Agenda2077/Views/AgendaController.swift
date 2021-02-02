@@ -8,42 +8,40 @@
 
 import UIKit
 
-class AgendaController: UIViewController {
+class AgendaController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var users: [User?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        tableView.dataSource = self
+        tableView.delegate = self
         
         
-    func getusers() -> [User?]{
-        var users: [User]? = nil
         
-        let url = URL(string: "https://superapi.netlify.app/api/users")
+        var users = Service.shared.getUsers()
         
-        URLSession.shared.dataTask(with: url!) {
-        data, response, error in
-            if error == nil {
-            // Usar data
-                users = try! JSONDecoder().decode([User].self, from: data!)
-                
-                for user in users! {
-                    print(user.user, user.pass)
-                }
-                
-            } else {
-                print(error!)
-            }
-        }.resume()
+        reloadInputViews()
         
-        return users!
         
     }
-        
-        
     
     
-
-
+    // Devuelve el número de elemtos del listado
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return users.count
+    }
+    
+    // Devuelve la celda de la posición correspondiente
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! UserRow
+        cell.userLabel.text = users[indexPath.row]?.name
+                
+        return cell
+    }
+        
 
 }
