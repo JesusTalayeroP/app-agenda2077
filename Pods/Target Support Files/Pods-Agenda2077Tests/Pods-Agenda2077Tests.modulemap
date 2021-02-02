@@ -1,0 +1,6 @@
+framework module Pods_Agenda2077Tests {
+  umbrella header "Pods-Agenda2077Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

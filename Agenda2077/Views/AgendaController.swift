@@ -24,7 +24,7 @@ class AgendaController: UIViewController, UITableViewDataSource, UITableViewDele
         
         var users = Service.shared.getUsers()
         
-        reloadInputViews()
+        tableView.reloadData()
         
         
     }

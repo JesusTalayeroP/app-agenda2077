@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0436D898D487D24EDC6FF768 /* Pods_Agenda2077Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */; };
 		0707336825C9D8C800D9BFC1 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707336725C9D8C800D9BFC1 /* Requests.swift */; };
 		0707336A25C9DB0900D9BFC1 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707336925C9DB0900D9BFC1 /* UserRow.swift */; };
 		072D1E9625C8811500E9FAEE /* Cyberway Riders.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072D1E9525C8811500E9FAEE /* Cyberway Riders.otf */; };
@@ -14,6 +15,7 @@
 		072D1E9D25C89AB500E9FAEE /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9C25C89AB500E9FAEE /* AgendaController.swift */; };
 		072D1E9F25C89B1A00E9FAEE /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */; };
 		072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */; };
+		72A01E81BF292DB8491406C7 /* Pods_Agenda2077.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600F9C6C2F6FB29B2935EA3 /* Pods_Agenda2077.framework */; };
 		7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */; };
 		7F4D5AAA25C2EF60006F6DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AA925C2EF60006F6DF9 /* SceneDelegate.swift */; };
 		7F4D5AAC25C2EF60006F6DF9 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AAB25C2EF60006F6DF9 /* LogInController.swift */; };
@@ -23,6 +25,7 @@
 		7F4D5ABF25C2EF63006F6DF9 /* Agenda2077Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5ABE25C2EF63006F6DF9 /* Agenda2077Tests.swift */; };
 		7F4D5ACA25C2EF63006F6DF9 /* Agenda2077UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */; };
 		7F73015C25C98467009DC57B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73015B25C98467009DC57B /* User.swift */; };
+		9C9EC7E28F83105F3DBD17A8 /* Pods_Agenda2077_Agenda2077UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A684BCCE91B3B96EEE3CE6 /* Pods_Agenda2077_Agenda2077UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,8 @@
 		072D1E9C25C89AB500E9FAEE /* AgendaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
 		072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
+		0C7AD8E1EDD7D0E6739EBB63 /* Pods-Agenda2077-Agenda2077UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; path = "Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; sourceTree = "<group>"; };
+		68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda2077Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4D5AA425C2EF60006F6DF9 /* Agenda2077.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda2077.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F4D5AA925C2EF60006F6DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +70,13 @@
 		7F4D5AC925C2EF63006F6DF9 /* Agenda2077UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda2077UITests.swift; sourceTree = "<group>"; };
 		7F4D5ACB25C2EF63006F6DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F73015B25C98467009DC57B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9600F9C6C2F6FB29B2935EA3 /* Pods_Agenda2077.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda2077.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5C83AF444CC3BA8C038F00 /* Pods-Agenda2077-Agenda2077UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077-Agenda2077UITests.debug.xcconfig"; path = "Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8170B882594BD65860D1CC6 /* Pods-Agenda2077Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077Tests.debug.xcconfig"; path = "Target Support Files/Pods-Agenda2077Tests/Pods-Agenda2077Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C21DE9828ECEF63E5A3E3F57 /* Pods-Agenda2077Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077Tests.release.xcconfig"; path = "Target Support Files/Pods-Agenda2077Tests/Pods-Agenda2077Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4A684BCCE91B3B96EEE3CE6 /* Pods_Agenda2077_Agenda2077UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda2077_Agenda2077UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D069279A7A42AADD0DBF00A9 /* Pods-Agenda2077.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077.release.xcconfig"; path = "Target Support Files/Pods-Agenda2077/Pods-Agenda2077.release.xcconfig"; sourceTree = "<group>"; };
+		E983FA0A37FA9027D93A66E6 /* Pods-Agenda2077.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077.debug.xcconfig"; path = "Target Support Files/Pods-Agenda2077/Pods-Agenda2077.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A01E81BF292DB8491406C7 /* Pods_Agenda2077.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0436D898D487D24EDC6FF768 /* Pods_Agenda2077Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9EC7E28F83105F3DBD17A8 /* Pods_Agenda2077_Agenda2077UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +126,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2DF7E3197562F96894744DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9600F9C6C2F6FB29B2935EA3 /* Pods_Agenda2077.framework */,
+				C4A684BCCE91B3B96EEE3CE6 /* Pods_Agenda2077_Agenda2077UITests.framework */,
+				68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F4D5A9B25C2EF60006F6DF9 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +144,8 @@
 				7F4D5AC825C2EF63006F6DF9 /* Agenda2077UITests */,
 				7F4D5AA525C2EF60006F6DF9 /* Products */,
 				7F4D5AD825C2F2FA006F6DF9 /* Fonts */,
+				F97C4FD339CC913A6C6C26A5 /* Pods */,
+				2DF7E3197562F96894744DFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +211,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F97C4FD339CC913A6C6C26A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E983FA0A37FA9027D93A66E6 /* Pods-Agenda2077.debug.xcconfig */,
+				D069279A7A42AADD0DBF00A9 /* Pods-Agenda2077.release.xcconfig */,
+				AA5C83AF444CC3BA8C038F00 /* Pods-Agenda2077-Agenda2077UITests.debug.xcconfig */,
+				0C7AD8E1EDD7D0E6739EBB63 /* Pods-Agenda2077-Agenda2077UITests.release.xcconfig */,
+				B8170B882594BD65860D1CC6 /* Pods-Agenda2077Tests.debug.xcconfig */,
+				C21DE9828ECEF63E5A3E3F57 /* Pods-Agenda2077Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F4D5ACE25C2EF63006F6DF9 /* Build configuration list for PBXNativeTarget "Agenda2077" */;
 			buildPhases = (
+				D70C8582AD01DAEEDC0BBCCE /* [CP] Check Pods Manifest.lock */,
 				7F4D5AA025C2EF60006F6DF9 /* Sources */,
 				7F4D5AA125C2EF60006F6DF9 /* Frameworks */,
 				7F4D5AA225C2EF60006F6DF9 /* Resources */,
+				F8B04B872AED1E5243BF6FB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F4D5AD125C2EF63006F6DF9 /* Build configuration list for PBXNativeTarget "Agenda2077Tests" */;
 			buildPhases = (
+				0E445F8A6272CFA5548F33DF /* [CP] Check Pods Manifest.lock */,
 				7F4D5AB625C2EF63006F6DF9 /* Sources */,
 				7F4D5AB725C2EF63006F6DF9 /* Frameworks */,
 				7F4D5AB825C2EF63006F6DF9 /* Resources */,
@@ -226,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F4D5AD425C2EF63006F6DF9 /* Build configuration list for PBXNativeTarget "Agenda2077UITests" */;
 			buildPhases = (
+				B56EF3156CDF1A5C0926C5D9 /* [CP] Check Pods Manifest.lock */,
 				7F4D5AC125C2EF63006F6DF9 /* Sources */,
 				7F4D5AC225C2EF63006F6DF9 /* Frameworks */,
 				7F4D5AC325C2EF63006F6DF9 /* Resources */,
+				EBA42E67AC8488480A349B3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +357,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E445F8A6272CFA5548F33DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agenda2077Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B56EF3156CDF1A5C0926C5D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agenda2077-Agenda2077UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D70C8582AD01DAEEDC0BBCCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agenda2077-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA42E67AC8488480A349B3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8B04B872AED1E5243BF6FB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda2077/Pods-Agenda2077-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda2077/Pods-Agenda2077-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Agenda2077/Pods-Agenda2077-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F4D5AA025C2EF60006F6DF9 /* Sources */ = {
@@ -496,6 +645,7 @@
 		};
 		7F4D5ACF25C2EF63006F6DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E983FA0A37FA9027D93A66E6 /* Pods-Agenda2077.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +663,7 @@
 		};
 		7F4D5AD025C2EF63006F6DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D069279A7A42AADD0DBF00A9 /* Pods-Agenda2077.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +681,7 @@
 		};
 		7F4D5AD225C2EF63006F6DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8170B882594BD65860D1CC6 /* Pods-Agenda2077Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +703,7 @@
 		};
 		7F4D5AD325C2EF63006F6DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C21DE9828ECEF63E5A3E3F57 /* Pods-Agenda2077Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +725,7 @@
 		};
 		7F4D5AD525C2EF63006F6DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5C83AF444CC3BA8C038F00 /* Pods-Agenda2077-Agenda2077UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +745,7 @@
 		};
 		7F4D5AD625C2EF63006F6DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7AD8E1EDD7D0E6739EBB63 /* Pods-Agenda2077-Agenda2077UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
