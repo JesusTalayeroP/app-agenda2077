@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		072D1E9F25C89B1A00E9FAEE /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */; };
 		072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */; };
 		72A01E81BF292DB8491406C7 /* Pods_Agenda2077.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600F9C6C2F6FB29B2935EA3 /* Pods_Agenda2077.framework */; };
+		7F07C79025CAC32400F38EFA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07C78F25CAC32400F38EFA /* Endpoints.swift */; };
 		7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */; };
 		7F4D5AAA25C2EF60006F6DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AA925C2EF60006F6DF9 /* SceneDelegate.swift */; };
 		7F4D5AAC25C2EF60006F6DF9 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AAB25C2EF60006F6DF9 /* LogInController.swift */; };
@@ -55,6 +56,7 @@
 		072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
 		0C7AD8E1EDD7D0E6739EBB63 /* Pods-Agenda2077-Agenda2077UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; path = "Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; sourceTree = "<group>"; };
 		68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda2077Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F07C78F25CAC32400F38EFA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		7F4D5AA425C2EF60006F6DF9 /* Agenda2077.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda2077.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F4D5AA925C2EF60006F6DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +112,9 @@
 		0707336625C9D8B400D9BFC1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7F73015B25C98467009DC57B /* User.swift */,
 				0707336725C9D8C800D9BFC1 /* Requests.swift */,
+				7F07C78F25CAC32400F38EFA /* Endpoints.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -134,6 +138,13 @@
 				68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F07C79125CACDF700F38EFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7F4D5A9B25C2EF60006F6DF9 = {
@@ -162,6 +173,7 @@
 		7F4D5AA625C2EF60006F6DF9 /* Agenda2077 */ = {
 			isa = PBXGroup;
 			children = (
+				7F07C79125CACDF700F38EFA /* Models */,
 				0707336625C9D8B400D9BFC1 /* Services */,
 				7F73015A25C98444009DC57B /* Helpers */,
 				072D1E9925C8906800E9FAEE /* Views */,
@@ -205,7 +217,6 @@
 		7F73015A25C98444009DC57B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				7F73015B25C98467009DC57B /* User.swift */,
 				0707336925C9DB0900D9BFC1 /* UserRow.swift */,
 			);
 			path = Helpers;
@@ -221,7 +232,6 @@
 				B8170B882594BD65860D1CC6 /* Pods-Agenda2077Tests.debug.xcconfig */,
 				C21DE9828ECEF63E5A3E3F57 /* Pods-Agenda2077Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -470,6 +480,7 @@
 				7F4D5AAC25C2EF60006F6DF9 /* LogInController.swift in Sources */,
 				072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */,
 				7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */,
+				7F07C79025CAC32400F38EFA /* Endpoints.swift in Sources */,
 				7F4D5AAA25C2EF60006F6DF9 /* SceneDelegate.swift in Sources */,
 				0707336825C9D8C800D9BFC1 /* Requests.swift in Sources */,
 				0707336A25C9DB0900D9BFC1 /* UserRow.swift in Sources */,

@@ -1,40 +1,16 @@
-//
-//  Services.swift
-//  Agenda2077
-//
-//  Created by user176680 on 2/2/21.
-//  Copyright © 2021 cev. All rights reserved.
-//
 
 import Foundation
+import Alamofire
 
-class Service {
+class Request {
     
-    static let shared = Service()
+    static let shared = Request()
     
     private init() {}
     
-    func getUsers() -> [User?]{
-        var users: [User]? = nil
+    func getUsers() -> DataRequest {
         
-        let url = URL(string: "https://superapi.netlify.app/api/users")
-        
-        URLSession.shared.dataTask(with: url!) {
-        data, response, error in
-            if error == nil {
-            // Usar data
-                users = try! JSONDecoder().decode([User].self, from: data!)
-                
-                for user in users! {
-                    print(user.name)
-                }
-                
-            } else {
-                print(error!)
-            }
-        }.resume()
-        
-        return users!
+        return AF.request(Endpoints.shared.baseURL+Endpoints.shared.getUsers, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor:nil)
         
     }
 }

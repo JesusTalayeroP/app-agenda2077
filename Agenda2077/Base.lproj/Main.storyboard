@@ -421,7 +421,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-TI-IFi">
-                                                    <rect key="frame" x="173.5" y="6.5" width="67.5" height="30.5"/>
+                                                    <rect key="frame" x="180.5" y="8" width="53.5" height="27.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Name">
                                                             <attributes>
