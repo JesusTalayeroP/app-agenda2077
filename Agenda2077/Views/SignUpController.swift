@@ -10,15 +10,39 @@ import UIKit
 
 class SignUpController: UIViewController {
 
+    @IBOutlet weak var emailTexField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
+        // Do any additional setup after loading the view.
+        
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func SignUpButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
-        navigationController?.popToRootViewController(animated: true)
+        if(!emailTexField.text!.isEmpty && (!passwordTextField.text!.isEmpty) == (!confirmPasswordTextField.text!.isEmpty)){
+            let parameters = [
+                    "username" : emailTexField.text!,
+                    "password" : passwordTextField.text!
+                ]
+                
+                Request.shared.postLogIn(parameters: parameters)
+                        
+                self.navigationController?.popToRootViewController(animated: true)
+
+                    
+            } else {
+                print("Las contraseñas no coinciden")
+            }
 
     }
     
@@ -28,6 +52,9 @@ class SignUpController: UIViewController {
 
     }
     
+    @objc func dismissKeyboard() {
+           view.endEditing(true)
+       }
     
 
 }

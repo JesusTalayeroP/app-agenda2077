@@ -14,12 +14,12 @@ class Endpoints {
     
     static let shared = Endpoints()
     
-    let baseURL = "https://79.159.179.214/api/users"
+    let baseURL = "http://79.159.179.214/api/users"
     
     //User´s Petitions
    
         let getUsers:String = "/all"
-        let login:String = "/login"
-        let rgister:String = "/register"
+        let postLogIn:String = "/login"
+        let postSignUp:String = "/register"
     
 }

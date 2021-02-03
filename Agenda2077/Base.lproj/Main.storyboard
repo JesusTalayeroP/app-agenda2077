@@ -129,7 +129,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="LogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyB-6b-gwt"/>
-                                                    <segue destination="MMz-DK-U0M" kind="show" id="2IB-5Q-21C"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -189,6 +188,11 @@
                     <navigationItem key="navigationItem" title="Log In" leftItemsSupplementBackButton="YES" id="c4Q-nr-OXb">
                         <barButtonItem key="backBarButtonItem" title=" " id="Men-jy-GJW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="5aB-t3-9Nu" id="jZ8-BR-oX4"/>
+                        <outlet property="passwordTextField" destination="lpM-Sz-RCB" id="ENf-vV-mSB"/>
+                        <segue destination="MMz-DK-U0M" kind="show" identifier="mainView" id="eFS-eo-z5K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -354,6 +358,11 @@
                         <viewLayoutGuide key="safeArea" id="EAY-RF-rqw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="l4c-0j-jm2"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="T5t-k7-rvu" id="iQy-Pi-Edk"/>
+                        <outlet property="emailTexField" destination="Z2h-kH-hqu" id="GE1-x1-wtX"/>
+                        <outlet property="passwordTextField" destination="xif-Di-Tel" id="bhi-73-JNV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mye-a9-fYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

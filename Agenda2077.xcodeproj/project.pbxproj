@@ -10,6 +10,7 @@
 		0436D898D487D24EDC6FF768 /* Pods_Agenda2077Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */; };
 		0707336825C9D8C800D9BFC1 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707336725C9D8C800D9BFC1 /* Requests.swift */; };
 		0707336A25C9DB0900D9BFC1 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707336925C9DB0900D9BFC1 /* UserRow.swift */; };
+		071A266D25CB314F001EE7C7 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A266C25CB314F001EE7C7 /* HideKeyboard.swift */; };
 		072D1E9625C8811500E9FAEE /* Cyberway Riders.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072D1E9525C8811500E9FAEE /* Cyberway Riders.otf */; };
 		072D1E9825C8812F00E9FAEE /* Cyberpunk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 072D1E9725C8812F00E9FAEE /* Cyberpunk.ttf */; };
 		072D1E9D25C89AB500E9FAEE /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9C25C89AB500E9FAEE /* AgendaController.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0707336725C9D8C800D9BFC1 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		0707336925C9DB0900D9BFC1 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		071A266C25CB314F001EE7C7 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		072D1E9525C8811500E9FAEE /* Cyberway Riders.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cyberway Riders.otf"; sourceTree = "<group>"; };
 		072D1E9725C8812F00E9FAEE /* Cyberpunk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cyberpunk.ttf; sourceTree = "<group>"; };
 		072D1E9C25C89AB500E9FAEE /* AgendaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				0707336925C9DB0900D9BFC1 /* UserRow.swift */,
+				071A266C25CB314F001EE7C7 /* HideKeyboard.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071A266D25CB314F001EE7C7 /* HideKeyboard.swift in Sources */,
 				072D1E9F25C89B1A00E9FAEE /* SignUpController.swift in Sources */,
 				7F4D5AAC25C2EF60006F6DF9 /* LogInController.swift in Sources */,
 				072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */,
