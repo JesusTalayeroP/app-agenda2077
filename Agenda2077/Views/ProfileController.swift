@@ -2,6 +2,7 @@
 
 import UIKit
 import Foundation
+import Alamofire
 
 class ProfileController: UIViewController {
 
@@ -85,11 +86,11 @@ class ProfileController: UIViewController {
     
     
     func getProfileInfo(){
-        var parameters = [
+        let parameters = [
             "api_token": apiToken
         ]
         
-        var request = Request.shared.postProfileInfo(parameters: parameters)
+        let request = Request.shared.postProfileInfo(parameters: parameters)
         
         request.responseJSON{ response in
             guard let data = response.data
@@ -99,13 +100,13 @@ class ProfileController: UIViewController {
                 self.user = try
                     JSONDecoder().decode(User.self, from: data)
                 
-                /*self.emailLabel.text = self.emailLabel.text! + self.user!.email
-                self.namelLabel.text = self.nameLabel.text! + self.user!.name
+                self.emailLabel.text = self.emailLabel.text! + self.user!.email
+                self.nameLabel.text = self.nameLabel.text! + self.user!.name
                 self.usernameLabel.text = self.usernameLabel.text! + self.user!.username
-                self.surnameLabel.text = self.surnameLabel.text! + self.user!.surname*/
+                self.surnameLabel.text = self.surnameLabel.text! + self.user!.surname
                 
             }catch{
-                print(data)
+                print("error")
             }
         }
     

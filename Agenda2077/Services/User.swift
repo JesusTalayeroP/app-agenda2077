@@ -30,9 +30,25 @@ class User : Encodable, Decodable{
         self._password = password
     }
     
+    public var username: String {
+        get {
+            return self._username
+        }
+    }
+    public var email: String {
+        get {
+            return self._email
+        }
+    }
     public var name: String {
         get {
             return self._name
         }
     }
+    public var surname: String {
+        get {
+            return self._surname
+        }
+    }
+    
 }
