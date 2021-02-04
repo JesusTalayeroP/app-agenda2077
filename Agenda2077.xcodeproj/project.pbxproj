@@ -16,6 +16,7 @@
 		072D1E9D25C89AB500E9FAEE /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9C25C89AB500E9FAEE /* AgendaController.swift */; };
 		072D1E9F25C89B1A00E9FAEE /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */; };
 		072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */; };
+		074C0CBF25CC9148005F9D8B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C0CBE25CC9148005F9D8B /* ProfileController.swift */; };
 		72A01E81BF292DB8491406C7 /* Pods_Agenda2077.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600F9C6C2F6FB29B2935EA3 /* Pods_Agenda2077.framework */; };
 		7F07C79025CAC32400F38EFA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07C78F25CAC32400F38EFA /* Endpoints.swift */; };
 		7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D5AA725C2EF60006F6DF9 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		072D1E9C25C89AB500E9FAEE /* AgendaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
 		072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
+		074C0CBE25CC9148005F9D8B /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		0C7AD8E1EDD7D0E6739EBB63 /* Pods-Agenda2077-Agenda2077UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; path = "Target Support Files/Pods-Agenda2077-Agenda2077UITests/Pods-Agenda2077-Agenda2077UITests.release.xcconfig"; sourceTree = "<group>"; };
 		68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda2077Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F07C78F25CAC32400F38EFA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				072D1E9C25C89AB500E9FAEE /* AgendaController.swift */,
 				072D1E9E25C89B1A00E9FAEE /* SignUpController.swift */,
 				072D1EA025C89C6300E9FAEE /* PasswordRecoveryController.swift */,
+				074C0CBE25CC9148005F9D8B /* ProfileController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,13 +149,6 @@
 				68DA5EA5840AA90E080AE923 /* Pods_Agenda2077Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7F07C79125CACDF700F38EFA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		7F4D5A9B25C2EF60006F6DF9 = {
@@ -181,7 +177,6 @@
 		7F4D5AA625C2EF60006F6DF9 /* Agenda2077 */ = {
 			isa = PBXGroup;
 			children = (
-				7F07C79125CACDF700F38EFA /* Models */,
 				0707336625C9D8B400D9BFC1 /* Services */,
 				7F73015A25C98444009DC57B /* Helpers */,
 				072D1E9925C8906800E9FAEE /* Views */,
@@ -495,6 +490,7 @@
 				7F4D5AAC25C2EF60006F6DF9 /* LogInController.swift in Sources */,
 				072D1EA125C89C6400E9FAEE /* PasswordRecoveryController.swift in Sources */,
 				7F4D5AA825C2EF60006F6DF9 /* AppDelegate.swift in Sources */,
+				074C0CBF25CC9148005F9D8B /* ProfileController.swift in Sources */,
 				7F07C79025CAC32400F38EFA /* Endpoints.swift in Sources */,
 				7F4D5AAA25C2EF60006F6DF9 /* SceneDelegate.swift in Sources */,
 				0707336825C9D8C800D9BFC1 /* Requests.swift in Sources */,

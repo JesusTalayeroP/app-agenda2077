@@ -26,6 +26,17 @@ class Request {
     
     func postRecoverPassword(parameters:[String:String]) -> DataRequest {
         
-        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.recoverPassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
+        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postRecoverPassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
+    }
+    
+    func getProfileInfo() -> DataRequest {
+        
+        return AF.request(Endpoints.shared.baseURL+Endpoints.shared.getProfileDetails, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor:nil)
+        
+    }
+    
+    func postChangePassword(parameters:[String:String]) -> DataRequest {
+        
+        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postChangePassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
     }
 }

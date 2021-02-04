@@ -38,11 +38,20 @@ class LogInController: UIViewController {
             
             request.responseJSON { response in
                 print(response.response!)
-                if(response.response!.statusCode == 200){
+                if(response.response!.statusCode == 200 && response.value! as! String != "Wrong user or password"){
                     // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
                     
                     self.performSegue(withIdentifier: "mainView", sender: sender)
                     self.navigationController?.setNavigationBarHidden(true, animated: true)
+                }else {
+                    let title = "Wrong email or password"
+                    let message = "The email or passwor introduced is incorrect"
+                    
+                    let alert = UIAlertController(title: title , message: message, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    
+                    self.present(alert, animated: true)
+                    
                 }
             }
         }
@@ -53,6 +62,15 @@ class LogInController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+   
+    func Alert(title: String, message: String){
+            
+        let alert = UIAlertController(title: title , message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+    }
+    
     
 }
 

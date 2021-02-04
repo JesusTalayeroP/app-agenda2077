@@ -15,6 +15,9 @@ class PasswordRecoveryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
     
@@ -32,14 +35,16 @@ class PasswordRecoveryController: UIViewController {
             
             if(response.response!.statusCode == 200){
                 let title = response.value!
+                
                 // ALERTAAAA
                 // CAMPBIAR POR FUNCION SI DA TIEMPO
                 // TIENE QUE DAR TIEMPO
-                let alert = UIAlertController(title: title as? String, message: "The user was registered succesfully. Press OK and Log in the app.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+                let alert = UIAlertController(title: "Your new password is " + (title as! String), message: "Log in to the app and change your password in your profile", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: {action in self.navigationController?.popToRootViewController(animated: true)}))
                 self.present(alert, animated: true)
+                
                             
-                self.navigationController?.popToRootViewController(animated: true)
+                
                 }
             }
         }
@@ -48,5 +53,9 @@ class PasswordRecoveryController: UIViewController {
     @IBAction func LogInButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
         navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
