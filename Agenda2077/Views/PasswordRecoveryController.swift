@@ -26,16 +26,27 @@ class PasswordRecoveryController: UIViewController {
                 "email" : emailTextField.text!
             ]
             
-            Request.shared.postRecoverPassword(parameters: parameters)
+            let request = Request.shared.postRecoverPassword(parameters: parameters)
             
-            self.navigationController?.popToRootViewController(animated: true)
+            request.responseJSON{ response in
+            
+            if(response.response!.statusCode == 200){
+                let title = response.value!
+                // ALERTAAAA
+                // CAMPBIAR POR FUNCION SI DA TIEMPO
+                // TIENE QUE DAR TIEMPO
+                let alert = UIAlertController(title: title as? String, message: "The user was registered succesfully. Press OK and Log in the app.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+                self.present(alert, animated: true)
+                            
+                self.navigationController?.popToRootViewController(animated: true)
+                }
+            }
         }
-       
     }
     
     @IBAction func LogInButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
         navigationController?.popToRootViewController(animated: true)
-
     }
 }

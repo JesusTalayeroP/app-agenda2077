@@ -37,7 +37,7 @@ class LogInController: UIViewController {
             let request = Request.shared.postLogIn(parameters: parameters)
             
             request.responseJSON { response in
-                print(response.value! as! String)
+                print(response.response!)
                 if(response.response!.statusCode == 200){
                     // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
                     
