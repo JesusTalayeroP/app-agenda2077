@@ -29,9 +29,9 @@ class Request {
         return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postRecoverPassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
     }
     
-    func getProfileInfo() -> DataRequest {
+    func postProfileInfo(parameters:[String:String]) -> DataRequest {
         
-        return AF.request(Endpoints.shared.baseURL+Endpoints.shared.getProfileDetails, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor:nil)
+        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postProfileDetails, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
         
     }
     

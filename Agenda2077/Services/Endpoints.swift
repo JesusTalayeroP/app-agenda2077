@@ -22,7 +22,7 @@ class Endpoints {
         let postLogIn:String = "/login"
         let postSignUp:String = "/register"
         let postRecoverPassword:String = "/restore/password"
-        let getProfileDetails:String = "/profile/info"
+        let postProfileDetails:String = "/profile/info"
         let postChangePassword:String = "/update/password"
     
 }

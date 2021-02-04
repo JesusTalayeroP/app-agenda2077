@@ -20,7 +20,6 @@ class LogInController: UIViewController {
         super.viewDidLoad()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
-        // Do any additional setup after loading the view.
         
         view.addGestureRecognizer(tap)
     }
@@ -37,12 +36,19 @@ class LogInController: UIViewController {
             let request = Request.shared.postLogIn(parameters: parameters)
             
             request.responseJSON { response in
-                print(response.response!)
-                if(response.response!.statusCode == 200 && response.value! as! String != "Wrong user or password"){
-                    // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
+                
+                if(response.response!.statusCode == 200 && response.value! as! String != "Wrong user or password" && response.value! as! String != "No user"){
+                    
+                    let body = response.value as? String
+                    let splitBody = body?.split(separator: " ")
+                    let apiToken = splitBody![1]
+                    
+                    UserDefaults.standard.set(apiToken, forKey: "apiToken")
                     
                     self.performSegue(withIdentifier: "mainView", sender: sender)
+                    // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
                     self.navigationController?.setNavigationBarHidden(true, animated: true)
+                    
                 }else {
                     let title = "Wrong email or password"
                     let message = "The email or passwor introduced is incorrect"
