@@ -375,7 +375,71 @@
                     <view key="view" contentMode="scaleToFill" id="obP-pR-Pnw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3sr-AR-PTb">
+                                <rect key="frame" x="20" y="30" width="374" height="243.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antigua contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIB-mI-Oxv">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.85533630849999998" blue="0.92000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LE0-DN-vKo">
+                                        <rect key="frame" x="0.0" y="20.5" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioZ-jv-tyW">
+                                        <rect key="frame" x="0.0" y="54.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.85533630849999998" blue="0.92000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtU-Jz-KIA">
+                                        <rect key="frame" x="0.0" y="75" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma nueva contrasela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-LS-Vyv">
+                                        <rect key="frame" x="0.0" y="109" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.85533630849999998" blue="0.92000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-q3-tud">
+                                        <rect key="frame" x="0.0" y="129.5" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h37-ni-twV">
+                                        <rect key="frame" x="0.0" y="163.5" width="374" height="80"/>
+                                        <state key="normal" title="Change Password" backgroundImage="botonprueba3-1"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ewj-XF-5Vl">
+                                <rect key="frame" x="20" y="632" width="374" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lG-Fy-0rL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Delete Account">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ewj-XF-5Vl" firstAttribute="leading" secondItem="sCR-f1-Tt7" secondAttribute="leading" constant="20" id="6dM-iX-6kD"/>
+                            <constraint firstItem="sCR-f1-Tt7" firstAttribute="bottom" secondItem="Ewj-XF-5Vl" secondAttribute="bottom" constant="60" id="UCL-bI-Klo"/>
+                            <constraint firstItem="3sr-AR-PTb" firstAttribute="leading" secondItem="sCR-f1-Tt7" secondAttribute="leading" constant="20" id="d5w-Eg-YiH"/>
+                            <constraint firstItem="sCR-f1-Tt7" firstAttribute="trailing" secondItem="3sr-AR-PTb" secondAttribute="trailing" constant="20" id="efI-2j-kew"/>
+                            <constraint firstItem="sCR-f1-Tt7" firstAttribute="trailing" secondItem="Ewj-XF-5Vl" secondAttribute="trailing" constant="20" id="xze-ha-iTa"/>
+                            <constraint firstItem="3sr-AR-PTb" firstAttribute="top" secondItem="sCR-f1-Tt7" secondAttribute="top" constant="30" id="z4i-Px-CG0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sCR-f1-Tt7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="Jqr-rg-3yM"/>
@@ -483,6 +547,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mo0-xv-u5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="1039"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VIl-hC-meg">
+            <objects>
+                <viewController id="bJu-ah-BrL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wei-FX-muh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UOZ-2s-WjD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1P-3K-Nnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="1039"/>
         </scene>
         <!--Password Recovery-->
         <scene sceneID="0ME-iP-v2P">
