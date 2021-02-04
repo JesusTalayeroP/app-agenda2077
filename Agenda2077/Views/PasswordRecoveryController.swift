@@ -10,6 +10,8 @@ import UIKit
 
 class PasswordRecoveryController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,17 @@ class PasswordRecoveryController: UIViewController {
     
     @IBAction func RecoverPasswordButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
-        navigationController?.popToRootViewController(animated: true)
-
+        if(!emailTextField.text!.isEmpty){
+            let parameters = [
+                "username" : emailTextField.text!,
+                "email" : emailTextField.text!
+            ]
+            
+            Request.shared.postRecoverPassword(parameters: parameters)
+            
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+       
     }
     
     @IBAction func LogInButton(_ sender: Any) {

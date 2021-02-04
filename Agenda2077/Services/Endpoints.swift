@@ -21,5 +21,6 @@ class Endpoints {
         let getUsers:String = "/all"
         let postLogIn:String = "/login"
         let postSignUp:String = "/register"
+        let recoverPassword:String = "/restore/password"
     
 }

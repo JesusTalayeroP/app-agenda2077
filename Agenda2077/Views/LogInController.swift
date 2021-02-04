@@ -34,19 +34,17 @@ class LogInController: UIViewController {
                 "password" : passwordTextField.text!
             ]
             
-            //let request = Request.shared.postLogIn(parameters: parameters)
+            let request = Request.shared.postLogIn(parameters: parameters)
             
-            Request.shared.postLogIn(parameters: parameters)
-                
-                //if(response.response!.statusCode == 200){
+            request.responseJSON { response in
+                print(response.value! as! String)
+                if(response.response!.statusCode == 200){
                     // Ocultar la barra de navegacion superior para que no se pueda volver a loguear una vez está el usuario en la agenda
                     
                     self.performSegue(withIdentifier: "mainView", sender: sender)
                     self.navigationController?.setNavigationBarHidden(true, animated: true)
-                //}
-            
-            
-            
+                }
+            }
         }
         
 

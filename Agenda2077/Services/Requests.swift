@@ -21,10 +21,16 @@ class Request {
         
     }
     
-    func postSignUp(parameters:[String:String]) -> DataRequest {
+    func postSignUp(user: User) {
         
-        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postSignUp, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: nil, interceptor:nil)
+        AF.request(Endpoints.shared.baseURL + Endpoints.shared.postSignUp, method: .post, parameters: user, encoder: JSONParameterEncoder.default).response {response in debugPrint(response)
+            
+        }
         
+    }
+    func postRecoverPassword(parameters:[String:String]) {
         
+        AF.request(Endpoints.shared.baseURL + Endpoints.shared.recoverPassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default).response {response in debugPrint(response)
+        }
     }
 }

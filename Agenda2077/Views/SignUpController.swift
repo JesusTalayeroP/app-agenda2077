@@ -30,12 +30,16 @@ class SignUpController: UIViewController {
     @IBAction func SignUpButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
         if(!emailTexField.text!.isEmpty && (!passwordTextField.text!.isEmpty) == (!confirmPasswordTextField.text!.isEmpty)){
-            let parameters = [
-                    "username" : emailTexField.text!,
-                    "password" : passwordTextField.text!
-                ]
+            let user = User.init(
+                    username : emailTexField.text!,
+                    email: emailTexField.text!,
+                    name: emailTexField.text!,
+                    surname: emailTexField.text!,
+                    profilePic: emailTexField.text!,
+                    password: passwordTextField.text!
+                )
                 
-                Request.shared.postLogIn(parameters: parameters)
+            Request.shared.postSignUp(user: user)
                         
                 self.navigationController?.popToRootViewController(animated: true)
 

@@ -631,6 +631,9 @@
                         <viewLayoutGuide key="safeArea" id="BgY-xL-GYS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Password Recovery" id="ran-ek-I4d"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="G53-Sa-tfM" id="mZB-UO-qIE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uz6-9F-h2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
