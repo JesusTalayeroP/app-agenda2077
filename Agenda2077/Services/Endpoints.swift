@@ -24,5 +24,6 @@ class Endpoints {
         let postRecoverPassword:String = "/restore/password"
         let postProfileDetails:String = "/profile/info"
         let postChangePassword:String = "/update/password"
+        let postDeleteUser:String = "/remove"
     
 }

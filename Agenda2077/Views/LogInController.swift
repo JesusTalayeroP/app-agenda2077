@@ -22,6 +22,8 @@ class LogInController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
+        
+        UserDefaults.standard.removeObject(forKey: "apiToken")
     }
 
     @IBAction func LogInButton(_ sender: Any) {

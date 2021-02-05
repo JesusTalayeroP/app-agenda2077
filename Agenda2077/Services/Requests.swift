@@ -39,4 +39,8 @@ class Request {
         
         return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postChangePassword, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
     }
+    
+    func postDeleteUser(parameters:[String:String]) -> DataRequest {
+        return AF.request(Endpoints.shared.baseURL + Endpoints.shared.postDeleteUser, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default)
+    }
 }
