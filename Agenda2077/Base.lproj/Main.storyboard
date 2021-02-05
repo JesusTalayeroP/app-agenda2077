@@ -285,7 +285,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xif-Di-Tel">
                                         <rect key="frame" x="0.0" y="369" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-rI-YNN">
                                         <rect key="frame" x="0.0" y="417" width="374" height="22"/>
@@ -304,7 +304,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5t-k7-rvu">
                                         <rect key="frame" x="0.0" y="453" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have to accept the terms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yty-nv-SlD">
                                         <rect key="frame" x="0.0" y="494" width="374" height="0.0"/>
@@ -725,10 +725,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="d7V-IZ-L3p">
-                                <rect key="frame" x="20" y="49.999999999999972" width="374" height="469.33333333333326"/>
+                                <rect key="frame" x="20" y="50" width="374" height="474"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lQt-pr-Rei">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="211.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="213.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reset-password-bien-2" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-J6-be1">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
@@ -737,7 +737,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fb-ZR-63t">
-                                                <rect key="frame" x="0.0" y="166" width="374" height="45.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="166" width="374" height="47.666666666666657"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">Introduce your email for get a new 
@@ -770,10 +770,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-dc-p6S">
-                                        <rect key="frame" x="0.0" y="283.33333333333331" width="374" height="186"/>
+                                        <rect key="frame" x="0.0" y="285.66666666666669" width="374" height="188.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZt-0R-klG">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="24.333333333333332"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Email">
                                                         <attributes>
@@ -789,12 +789,12 @@
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G53-Sa-tfM">
-                                                <rect key="frame" x="0.0" y="47" width="374" height="34"/>
+                                                <rect key="frame" x="0.0" y="49.333333333333314" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sry-qm-Rw4">
-                                                <rect key="frame" x="0.0" y="106.00000000000006" width="374" height="80"/>
+                                                <rect key="frame" x="0.0" y="108.33333333333331" width="374" height="80"/>
                                                 <state key="normal" backgroundImage="botonprueba3-1">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Recover password">
@@ -815,10 +815,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Qyi-CE-bUC">
-                                <rect key="frame" x="20" y="694.33333333333337" width="374" height="29.666666666666629"/>
+                                <rect key="frame" x="20" y="692.33333333333337" width="374" height="31.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-a1-ugu">
-                                        <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="29.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="211.66666666666666" height="31.666666666666668"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Remember your password?">
                                                 <attributes>
@@ -833,7 +833,7 @@
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9V-A0-eNN">
-                                        <rect key="frame" x="340" y="0.0" width="34" height="29.666666666666668"/>
+                                        <rect key="frame" x="326" y="0.0" width="48" height="31.666666666666668"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Log In">

@@ -9,6 +9,7 @@
 /*import Foundation
 import UIKit
 
+ // NO IMPLEMENTADOOOOOOOOOOOOOOOOO
 class HideKeyboard {
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
     // Do any additional setup after loading the view.

@@ -25,7 +25,7 @@ class ProfileController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // quitar el teclado al hacer tap fuera, meter en una clase si da tiempo
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
@@ -46,7 +46,7 @@ class ProfileController: UIViewController {
                 ]
                 
                 let request = Request.shared.postChangePassword(parameters: parameters)
-                
+                // Request cambiar contraseña
                 request.responseJSON { response in
                     print(response.response!)
                     print(parameters)
@@ -87,7 +87,7 @@ class ProfileController: UIViewController {
     }
     
     @IBAction func DeletteAccounButton(_ sender: Any) {
-        
+        //Alerta atencion vas a borrar cuenta
         let alert = UIAlertController(title: "WARNING", message: "You are deletting your account. It's a irreversible action. If you continue you will lost your account and all your saved data. Do you want to follow with the process?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler:{ action in self.deleteAccountRequest()}))
@@ -100,7 +100,7 @@ class ProfileController: UIViewController {
         view.endEditing(true)
     }
     
-    
+    // Peticion get de la informacion del perfil del usuario
     func getProfileInfoRequest(){
         let parameters = [
             "api_token": apiToken
@@ -132,7 +132,7 @@ class ProfileController: UIViewController {
         }
     
     }
-    
+    // funcion peticion borrar user
     func deleteAccountRequest(){
         let parameters = [
             "api_token": apiToken

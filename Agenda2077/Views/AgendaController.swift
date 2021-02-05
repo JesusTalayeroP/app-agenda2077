@@ -21,7 +21,7 @@ class AgendaController: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
+        // Peticion para obtener usuarios y rellenar la tabla
         request.response{(responseData) in
             guard let data = responseData.data
                 else {return}

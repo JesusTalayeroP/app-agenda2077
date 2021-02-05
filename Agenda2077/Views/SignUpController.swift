@@ -30,15 +30,12 @@ class SignUpController: UIViewController {
         super.viewDidLoad()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
-        // Do any additional setup after loading the view.
         
         view.addGestureRecognizer(tap)
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func SignUpButton(_ sender: Any) {
-        //Volver a la pantalla de LogIn
+        //Validaciones
         if(!emailTextField.text!.isEmpty && !passwordTextField.text!.isEmpty && !confirmPasswordTextField.text!.isEmpty && !usernameTextField.text!.isEmpty && !nameTextField.text!.isEmpty && !surnameTextField.text!.isEmpty){
             if(passwordTextField.text! == confirmPasswordTextField.text!){
                 if(agreeChecker.isOn){
@@ -52,14 +49,12 @@ class SignUpController: UIViewController {
                         )
                                 
                     let request = Request.shared.postSignUp(user: user)
-                    
+                    // Crear usuario
                     request.responseJSON { response in
                         print(response.response!)
                         if(response.response!.statusCode == 200){
                             // CREAR FUNCION ALERT
-                            // EN TITLE PONER UN STRING QUE DEPENDE DONDE CREE LA ALERTA ES UNO U OTRO
-                            // EN MESSAGE HACER LO MISMO QUE EN TITLE
-                            // TITLE DEL BOTON CONTINUE SIEMPRE
+                            // No ha dado tiempo, futura mejora a implementar
                             let alert = UIAlertController(title: "User registered", message: "The user was registered succesfully. Press 'Continue' and Log in the app.", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: {action in self.navigationController?.popToRootViewController(animated: true)}))
                             self.present(alert, animated: true)
@@ -67,9 +62,11 @@ class SignUpController: UIViewController {
                         }
                     }
                 }else{
+                    // Error aceptar terminos
                     errorTermsLabel.isHidden = false
                 }
             }else {
+                // Muchas alertas, demasiadas, cambiarlas por labels 
                 let alert = UIAlertController(title: "Pass not match", message: "The password and confirm password text fields don't match", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true)

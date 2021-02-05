@@ -18,8 +18,8 @@ class PasswordRecoveryController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LogInController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view.
     }
+    
     
     @IBAction func RecoverPasswordButton(_ sender: Any) {
         //Volver a la pantalla de LogIn
@@ -39,6 +39,7 @@ class PasswordRecoveryController: UIViewController {
                 // ALERTAAAA
                 // CAMPBIAR POR FUNCION SI DA TIEMPO
                 // TIENE QUE DAR TIEMPO
+                // Al final no dio tiempo (spoiler jeje)
                 let alert = UIAlertController(title: "Your new password is " + (title as! String), message: "Log in to the app and change your password in your profile", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: {action in self.navigationController?.popToRootViewController(animated: true)}))
                 self.present(alert, animated: true)

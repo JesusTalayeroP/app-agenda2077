@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-
+// Al final no he conseguido implementar esto
 class Alert {
     static func Alert(title: String, message: String){
         
