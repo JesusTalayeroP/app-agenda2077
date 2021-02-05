@@ -36,8 +36,6 @@ class AgendaController: UIViewController, UITableViewDataSource, UITableViewDele
                 print(data)
             }
         }
-        
-        
     }
     
     
@@ -51,7 +49,7 @@ class AgendaController: UIViewController, UITableViewDataSource, UITableViewDele
     // Devuelve la celda de la posición correspondiente
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! UserRow
-        cell.userLabel.text = users[indexPath.row].name
+        cell.userLabel.text = users[indexPath.row].username
         
         return cell
     }

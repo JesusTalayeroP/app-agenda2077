@@ -121,10 +121,10 @@ class ProfileController: UIViewController {
                 attributedEmail.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: NSRange(location: attributedEmail.length, length: attributedEmail.length - 5))
                 self.emailLabel.attributedText = attributedEmail*/
                 
-                self.emailLabel.text = self.emailLabel.text! + self.user!.email
-                self.nameLabel.text = self.nameLabel.text! + self.user!.name
-                self.usernameLabel.text = self.usernameLabel.text! + self.user!.username
-                self.surnameLabel.text = self.surnameLabel.text! + self.user!.surname
+                self.emailLabel.text = self.user!.email
+                self.nameLabel.text = self.user!.name
+                self.usernameLabel.text = self.user!.username
+                self.surnameLabel.text = self.user!.surname
                 
             }catch{
                 print("error")

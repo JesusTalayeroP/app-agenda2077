@@ -25,6 +25,11 @@ class LogInController: UIViewController {
         
         UserDefaults.standard.removeObject(forKey: "apiToken")
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 
     @IBAction func LogInButton(_ sender: Any) {
         
@@ -52,8 +57,8 @@ class LogInController: UIViewController {
                     self.navigationController?.setNavigationBarHidden(true, animated: true)
                     
                 }else {
-                    let title = "Wrong email or password"
-                    let message = "The email or passwor introduced is incorrect"
+                    let title = "Wrong user or password"
+                    let message = "The user or password introduced is incorrect"
                     
                     let alert = UIAlertController(title: title , message: message, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

@@ -33,7 +33,7 @@ class PasswordRecoveryController: UIViewController {
             
             request.responseJSON{ response in
             
-            if(response.response!.statusCode == 200){
+                if(response.response!.statusCode == 200 && response.value! as! String != "Wrong email"){
                 let title = response.value!
                 
                 // ALERTAAAA
@@ -43,8 +43,10 @@ class PasswordRecoveryController: UIViewController {
                 alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: {action in self.navigationController?.popToRootViewController(animated: true)}))
                 self.present(alert, animated: true)
                 
-                            
-                
+                } else {
+                    let alert = UIAlertController(title: "Wrong email", message: "The introduced email is not registered in the app", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
             }
         }
